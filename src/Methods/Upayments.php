@@ -87,7 +87,7 @@ class Upayments extends BaseMethod implements PaymentGatewayInterface
                 ],
                 'returnUrl' => $this->config->success_url,
                 'cancelUrl' => $this->config->error_url,
-                "notificationUrl"=>"https://webhook.site/d7c6e1c8-b98b-4f77-8b51-b487540df336",
+                "notificationUrl"=>$this->config->notify_url,
                 "customerExtraData"=> "User define data"
             ];
 
